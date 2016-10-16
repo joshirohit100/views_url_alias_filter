@@ -34,25 +34,9 @@ class UrlAliasFiler extends StringFilter {
         'field' => 'source',
         'left_table' => 'node_field_data',
         'left_field' => 'nid',
-        'operator' => 'LIKE',
-        'left_query' => 'CONCAT(\'/node/\' . node_field_data.nid)',
+        'left_query' => "SELECT CONCAT('/node/', nfd.nid) FROM node_field_data nfd WHERE nfd.nid=node_field_data.nid",
       );
 
-//      $configuration = array(
-//        'type' => 'INNER',
-//        'table' => 'url_alias',
-//        'field' => 'SUBSTRING(source, 6)',
-//        'left_table' => 'node_field_data',
-//        'left_field' => 'nid',
-//        'operator' => '=',
-//        'extra' => array(
-//          0 => array(
-//            'field' => 'source',
-//            'value' => '/node/%',
-//            'operator' => 'LIKE',
-//          ),
-//        ),
-//      );
       $join = Views::pluginManager('join')->createInstance('subquery', $configuration);
       $this->query->addRelationship('url_alias', $join, 'node_field_data');
 
