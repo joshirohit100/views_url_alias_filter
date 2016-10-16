@@ -1,0 +1,6 @@
+name: Views URL Alias Filter
+type: module
+core: 8.x
+description: 'Provides views filter where nodes can be filtered on the basis of URL alias.'
+dependencies:
+  - views
