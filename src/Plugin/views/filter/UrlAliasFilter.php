@@ -14,7 +14,7 @@ use Drupal\views\Views;
  *
  * @ViewsFilter("views_url_alias_filter")
  */
-class UrlAliasFiler extends StringFilter {
+class UrlAliasFilter extends StringFilter {
 
   /**
    * {@inheritdoc}
