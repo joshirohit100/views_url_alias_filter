@@ -1,0 +1,11 @@
+{
+    "name": "joshirohit100/views_url_alias_filter",
+    "description": "Drupal 8 module to filter nodes based on url alias.",
+    "authors": [
+        {
+            "name": "Rohit Joshi",
+            "email": "email@example.com"
+        }
+    ],
+    "require": {}
+}
