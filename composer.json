@@ -1,0 +1,13 @@
+{
+    "name": "drupal/views_url_alias_filter",
+    "type": "drupal-module",
+    "description": "Drupal 8 module to filter nodes based on url alias.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://github.com/joshirohit100/views_url_alias_filter",
+    "minimum-stability": "dev",
+    "support": {
+        "source": "https://github.com/joshirohit100/views_url_alias_filter"
+    },
+    "require": { }
+}
